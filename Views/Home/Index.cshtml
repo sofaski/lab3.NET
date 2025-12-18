@@ -1,0 +1,15 @@
+﻿@model CarValueML.Models.CarInputModel
+
+<h2>Оцінка вигідності покупки автомобіля</h2>
+
+<form asp-action="Predict" method="post">
+    <input name="Buying" placeholder="buying (low, med, high, vhigh)" /><br />
+    <input name="Maint" placeholder="maint" /><br />
+    <input name="Doors" placeholder="doors" /><br />
+    <input name="Persons" placeholder="persons" /><br />
+    <input name="LugBoot" placeholder="lug_boot" /><br />
+    <input name="Safety" placeholder="safety" /><br />
+    <input name="EstimatedPriceCategory" placeholder="price category (low/medium/high)" /><br /><br />
+
+    <button type="submit">Оцінити</button>
+</form>

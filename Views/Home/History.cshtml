@@ -1,0 +1,12 @@
+﻿@model List<string>
+
+<h2>Історія прогнозів</h2>
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<a asp-action="Index">Назад</a>
